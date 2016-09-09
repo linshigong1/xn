@@ -1,4 +1,4 @@
-package com.chinasofti.logserver.test;
+package com.xn.logserver.test;
 
 import static org.junit.Assert.*;
 
