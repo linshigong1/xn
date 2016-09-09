@@ -1,4 +1,4 @@
-package com.chinasofti.logserver.controller;
+package com.xn.controller;
 
 
 
@@ -22,13 +22,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.chinasofti.logserver.entity.LogServer;
-import com.chinasofti.logserver.service.ILogService;
-import com.chinasofti.logserver.util.ResultMessage;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.xn.entity.LogServer;
+import com.xn.service.ILogService;
+import com.xn.util.ResultMessage;
 
 
 

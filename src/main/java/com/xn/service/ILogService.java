@@ -1,10 +1,11 @@
-package com.chinasofti.logserver.service;
+package com.xn.service;
 
 import java.util.List;
 
 import org.springframework.data.mongodb.core.query.Query;
 
-import com.chinasofti.logserver.entity.LogServer;
+import com.xn.entity.LogServer;
+
 
 
 /**

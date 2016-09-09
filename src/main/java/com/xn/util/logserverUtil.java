@@ -6,7 +6,7 @@
  * @author  xhy
  * @date 2015年12月17日 下午6:10:04 
  */
-package com.chinasofti.logserver.util;
+package com.xn.util;
 
 import java.io.IOException;
 import java.io.InputStream;

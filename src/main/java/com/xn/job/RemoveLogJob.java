@@ -1,10 +1,11 @@
-package com.chinasofti.logserver.job;
+package com.xn.job;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.chinasofti.logserver.service.ILogService;
+import com.xn.service.ILogService;
+
 
 
 

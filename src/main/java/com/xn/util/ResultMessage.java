@@ -6,7 +6,7 @@
  * @author  xhy
  * @date 2015年12月10日 下午5:15:43 
  */
-package com.chinasofti.logserver.util;
+package com.xn.util;
 
 /**
  * @ClassName: ResultMessage

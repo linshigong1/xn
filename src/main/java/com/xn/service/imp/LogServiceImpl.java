@@ -1,4 +1,4 @@
-package com.chinasofti.logserver.service.impl;
+package com.xn.service.imp;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -15,9 +15,10 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 
-import com.chinasofti.logserver.entity.LogServer;
-import com.chinasofti.logserver.service.ILogService;
-import com.chinasofti.logserver.util.logserverUtil;
+import com.xn.entity.LogServer;
+import com.xn.service.ILogService;
+import com.xn.util.logserverUtil;
+
 
 
 /**

@@ -1,4 +1,4 @@
-package com.chinasofti.logserver.controller;
+package com.xn.controller;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

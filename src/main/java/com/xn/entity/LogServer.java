@@ -1,4 +1,4 @@
-package com.chinasofti.logserver.entity;
+package com.xn.entity;
 
 import java.util.Date;
 
