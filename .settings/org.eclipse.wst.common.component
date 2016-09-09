@@ -6,7 +6,7 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
-        <property name="context-root" value="/logserver"/>
         <property name="java-output-path" value="/xn/src/main/webapp/WEB-INF/classes"/>
+        <property name="context-root" value="/xn"/>
     </wb-module>
 </project-modules>

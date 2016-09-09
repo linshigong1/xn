@@ -3,7 +3,7 @@
   type="WEB"
   name="xn"
   id="myeclipse.1470299060493"
-  context-root="/logserver"
+  context-root="/xn"
   j2ee-spec="6.0"
   archive="xn.war">
   <attributes>
