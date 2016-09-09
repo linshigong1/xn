@@ -2,9 +2,7 @@ package com.xn.job;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 
-import com.xn.service.ILogService;
 
 
 
@@ -21,8 +19,6 @@ public class RemoveLogJob {
 	 // 记录日志信息对象
     private Logger log = LoggerFactory.getLogger(RemoveLogJob.class);
     
-    @Autowired
-	private ILogService logService;
     
     
     /**
@@ -34,7 +30,6 @@ public class RemoveLogJob {
      */
     public void execute(){
     	log.info(">>>>>>>>>>>>>>>>>>>删除日志开始");
-    	logService.removeLog();
     	log.info(">>>>>>>>>>>>>>>>>>>删除日志结束");
     }
     
