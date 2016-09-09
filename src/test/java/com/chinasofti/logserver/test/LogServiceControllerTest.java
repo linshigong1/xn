@@ -20,7 +20,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.ContextHierarchy;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.xn.controller.LogServiceController;
 
 
 @RunWith(value=SpringJUnit4ClassRunner.class)
@@ -53,7 +52,7 @@ public class LogServiceControllerTest {
 
 	@Test
 	public void testLogSave() {
-		LogServiceController lsc =(LogServiceController) ctx.getBean("logServiceController");
+		//LogServiceController lsc =(LogServiceController) ctx.getBean("logServiceController");
 
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ");
 		Calendar c = Calendar.getInstance();  // 获得当前时间
@@ -67,7 +66,7 @@ public class LogServiceControllerTest {
                 "\"content\":\"1测试测试测试1\"," +
                 "\"logTime\":\""+df.format(c.getTime())+"\"}";
 		session.setAttribute("logJson", logJson);
-		lsc.logSave(request,response);
+		//lsc.logSave(request,response);
 		fail("Not yet implemented");
 	}
 

@@ -2,7 +2,6 @@ package com.xn.service;
 
 import java.util.List;
 
-import org.springframework.data.mongodb.core.query.Query;
 
 import com.xn.entity.LogServer;
 
@@ -29,10 +28,10 @@ public interface ILogService {
 	public void logSave(LogServer logServer,String collectionName);
 	
 	//查询方法
-	public List<LogServer> findByQuery(Query query,Integer pageSize,
+	public List<LogServer> findByQuery(Integer pageSize,
 			Integer pageNo,String sysCode);
 	// 查询总数
-	public String countTotal(Query query, LogServer logServer,String sysCode);
+	public String countTotal(LogServer logServer,String sysCode);
 	
 	
 	/**
