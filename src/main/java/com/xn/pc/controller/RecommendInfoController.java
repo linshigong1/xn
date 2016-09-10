@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 
 @Controller
+@RequestMapping("/login")
 public class RecommendInfoController extends BaseController {
 	 // 记录日志信息对象
     private Logger log = LoggerFactory.getLogger(RecommendInfoController.class);
