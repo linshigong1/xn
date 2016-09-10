@@ -5,13 +5,13 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>首页</title>
-	<link rel="stylesheet" href="css/style.css">
+	<%@ include file="/common/head.jsp" %>
 </head>
 <body>
 	<header>
 		<div class="head">
 			<a class="logo" href="###">
-				<img src="img/logo.png" alt="">
+				<img src="<%=basePath %>/component/index/img/logo.png" alt="">
 			</a>
 			
 			<a class="recommend" href="../tj/index.html">立即推荐</a>
@@ -27,36 +27,36 @@
 
 	<section class="main">
 		<div>
-			<img src="img/pic.png" alt="">
+			<img src="<%=basePath %>/component/index/img/pic.png" alt="">
 			<a class="block_recommend center_btn" href="../tj/index.html">立即推荐</a>
 		</div>
 
 		<div>
-			<img src="img/pic2.png" alt="">
+			<img src="<%=basePath %>/component/index/img/pic2.png" alt="">
 		</div>
 
 		<div>
-			<img src="img/pic.png" alt="">
+			<img src="<%=basePath %>/component/index/img/pic.png" alt="">
 			<a class="block_recommend left_btn" href="../tj/index.html">立即推荐</a>
 		</div>
 
 		<div>
-			<img src="img/pic2.png" alt="">
+			<img src="<%=basePath %>/component/index/img/pic2.png" alt="">
 			<a class="block_recommend right_btn" href="../tj/index.html">立即推荐</a>
 		</div>	
 
 		<div>
-			<img src="img/pic.png" alt="">
+			<img src="<%=basePath %>/component/index/img/pic.png" alt="">
 			<a class="block_recommend left_btn" href="../tj/index.html">立即推荐</a>
 		</div>
 
 		<div>
-			<img src="img/pic2.png" alt="">
+			<img src="<%=basePath %>/component/index/img/pic2.png" alt="">
 			<a class="block_recommend right_btn" href="../tj/index.html">立即推荐</a>
 		</div>
 
 		<div>
-			<img src="img/pic.png" alt="">
+			<img src="<%=basePath %>/component/index/img/pic.png" alt="">
 			<div class="recommend_forward">
 				<a class="recommend_btn" href="../tj/index.html">立即推荐</a>	
 				<a class="forward_btn" href="###">转发别人</a>	
@@ -91,7 +91,7 @@
 
 		<div class="rss">
 			<div class="weChat">
-				<img src="img/QRcode.jpg" alt="">
+				<img src="<%=basePath %>/component/index/img/QRcode.jpg" alt="">
 				<span>
 					<i class="iconfont icon-weChat"></i>
 				</span>
@@ -115,6 +115,5 @@
 		<i class="iconfont icon-backTop" onclick="goTop()"></i>
 	</div>
 
-	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

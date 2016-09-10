@@ -5,7 +5,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>推荐信息</title>
-	<link rel="stylesheet" href="css/style.css">
+	<%@ include file="/common/head.jsp" %>
 </head>
 <body>
 	<header>

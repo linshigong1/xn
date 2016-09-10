@@ -29,27 +29,14 @@
         http://www.springframework.org/schema/cache 
         http://www.springframework.org/schema/cache/spring-cache.xsd
         ">
-    <jee:jndi-lookup id="datasource" jndi-name="java:comp/env/jdbc/mysql"/>
-	<!--定义JDBC模板Bean  --> 
-    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-		 <property name="dataSource">
-		<ref bean="datasource"/>
-		</property>
-	</bean>
-	<!-- 在事务中注入dataSource -->   
-    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">   
-       <property name="dataSource">
-		<ref bean="datasource"/>
-		</property>
-    </bean>
+        
+        
     <!-- 扫描serivce、repository注解 --> 
-	<context:component-scan base-package="com.xn.*">
+	<context:component-scan base-package="com.xn.**">
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 	</context:component-scan>
-	
     <tx:annotation-driven transaction-manager="transactionManager" />
 	<aop:aspectj-autoproxy  proxy-target-class="true"/>
-	
 	
 	
 	<bean id="annotationPropertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">  

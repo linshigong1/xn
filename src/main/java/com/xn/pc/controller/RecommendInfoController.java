@@ -10,8 +10,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.xn.pc.entity.RecommendInfo;
-import com.xn.pc.service.RecommendInfoService;
+import com.xn.pc.dao.IRecommendInfoDao;
+
 
 
 
@@ -20,13 +20,15 @@ import com.xn.pc.service.RecommendInfoService;
 public class RecommendInfoController extends BaseController {
 	 // 记录日志信息对象
     private Logger log = LoggerFactory.getLogger(RecommendInfoController.class);
+    
     @Autowired
-    private RecommendInfoService recommendInfoService;  
+	private IRecommendInfoDao recommendInfoDao;
+    
     
 	@RequestMapping(value="/indexInfo",method=RequestMethod.GET)
 	public String indexInfo(HttpServletRequest request, HttpServletResponse response){
-		RecommendInfo recommendInfo = new RecommendInfo();
-		recommendInfoService.save(recommendInfo);  
+	    System.out.print("sssssssssssssssssssssss");
+	    recommendInfoDao.find();
 		return "pc/index";
 	}
 	
