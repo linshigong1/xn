@@ -1,1 +1,6 @@
 *.class
+.classpath
+target/classes/application-web.xml
+target/classes/application.xml
+target/m2e-jee/web-resources/META-INF/maven/com.xn/xn/pom.properties
+target/m2e-jee/web-resources/META-INF/maven/com.xn/xn/pom.xml
