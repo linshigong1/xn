@@ -55,7 +55,7 @@
     <mvc:resources location="/component/" mapping="/component/**" cache-period="31556926"/>
     <mvc:resources location="/common/" mapping="/common/**" cache-period="31556926"/>
 	<!-- 配置扫描@controller的包路径 -->
-	<context:component-scan base-package="com.xn.pc.controller">
+	<context:component-scan base-package="com.xn.*">
 		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service"/>
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
