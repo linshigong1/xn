@@ -46,24 +46,6 @@
         </property>  
     </bean>
     
-	<bean id="removeLogJob" class="com.xn.job.RemoveLogJob"></bean>
-	<bean id="removeLogJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
-	    <property name="targetObject" ref="removeLogJob" />
-	    <property name="targetMethod" value="execute" />
-	    <property name="concurrent" value="false" />
-	</bean>
-	<bean id="removeLogJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
-	    <property name="jobDetail" ref="removeLogJobDetail" />
-	    <!-- 每天下午18:30点执行 -->
-	    <property name="cronExpression" value="0 30 18 * * ?" />
-	</bean>
 	
-	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
-	    <property name="triggers">
-	        <list>
-	             <ref bean="removeLogJobTrigger"/>
-	        </list>
-	    </property>
-	</bean>	
 	<!-- <import resource="classpath:application-collect.xml"/> -->
 </beans>

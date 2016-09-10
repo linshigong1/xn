@@ -50,9 +50,12 @@
     </bean>
     <!-- 启用mvc注解 -->
     <mvc:annotation-driven />
-    
+     <!-- 配置静态资源，避免spring拦截器拦截 -->
+    <mvc:resources location="/errorpage/" mapping="/errorpage/**" cache-period="31556926"/>
+    <mvc:resources location="/component/" mapping="/component/**" cache-period="31556926"/>
+    <mvc:resources location="/common/" mapping="/common/**" cache-period="31556926"/>
 	<!-- 配置扫描@controller的包路径 -->
-	<context:component-scan base-package="com.xn.**">
+	<context:component-scan base-package="com.xn.pc.controller">
 		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service"/>
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository"/>

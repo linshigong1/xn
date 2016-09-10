@@ -1,0 +1,393 @@
+
+@font-face {font-family: "iconfont";
+  src: url('../iconfont/iconfont.ttf') format('truetype'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-weChat:before { content: "\3488"; }
+.icon-microblog:before { content: "\e60a"; }
+
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body{
+	font-family:'Pingfang SC', 'DINpro', 'Helvetica Neue', Helvetica , 'Microsoft Yahei', sans-serif;
+}
+/*header start*/
+header{
+	width: 100%;
+	height: 60px;
+	background-color: rgba(0, 0, 0, 1);
+}
+a, a:hover, a:focus{
+	text-decoration: none;
+}
+ul, ul li{
+	list-style: none;
+}
+.head{
+	max-width: 1440px;
+	min-width: 1000px;
+	margin:0 auto;
+}
+.logo{
+	display: inline-block;
+	width:200px;
+	height: 100%;
+}
+.logo img{
+	width: 100%;
+	height: auto;
+}
+
+/*推荐人手册&关于香农 start*/
+.tjrsc_gyxn{
+	width: 200px;
+	height: 100%;
+	float: right;
+}
+.tjrsc_gyxn a{
+	display: inline-block;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    float: left;
+    color: #c1bfc0;
+    line-height: 60px;
+}
+/*推荐人手册&关于香农 end*/
+
+/*立即使用btn start*/
+.ljsy_btn{
+	display: inline-block;
+    float: right;
+    width: 100px;
+    height: 35px;
+    color: #c1bfc0;
+    background-color: #e6211b;
+    line-height: 35px;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 6px;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+/*立即使用btn end*/
+/*header end*/
+
+/*main start*/
+.main{
+	width: 100%;
+	max-width: 1440px;
+	min-width: 1000px;
+	height: auto;
+	display: table;
+	margin: 0 auto;
+}
+.referral_title{
+	width: 150px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	margin: 0 auto;
+	color: rgba(0, 0, 0, 1);
+	border-left: 4px solid rgba(0, 0, 0, 1);
+	border-right: 4px solid rgba(0, 0, 0, 1);
+	margin-top: 40px;
+	font-weight: 500;
+}
+
+/*推荐信息 form start*/
+.referral_form{
+	width: 100%;
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+	display: table;
+}
+.referral_information_box label,
+.referral_person_box label{
+	margin-right: 33px;
+}
+.referral_information_box > div,
+.referral_person_box > div{
+	margin-top: 60px;
+}
+.referral_information_box > div > span,
+.referral_person_box > div > span{
+	color: #e6211b;
+}
+.main,
+footer{
+	font-size: 0.875em;
+	letter-spacing: 1px;
+}
+
+.select_category > ul,
+.select_company > ul{
+	display: inline-block;
+}
+.select_category > ul > li,
+.select_company > ul > li {
+	float: left;
+	color: rgba(0, 0, 0, 0.5);
+	margin-right: 25px;
+	cursor: pointer;
+}
+.select_category ul li > span,
+.select_company ul li > span{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 1);
+}
+.selected{
+	color:rgba(0 , 0, 0, 1) !important;
+}
+.selected > span{
+	background-color: #e6211b;
+	border-color: #e6211b !important;
+}
+
+.referral_name,
+.person_name,
+.person_phone
+{
+	line-height: 40px;	
+}
+.referral_name > input,
+.person_name > input,
+.person_phone > input{
+	width: 890px;
+	height: 40px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	float: right;
+	padding-left: 6px;
+}
+.select_producer > label{
+	margin-right: 65px;
+}
+.select_producer > select{
+	width: 287px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-right: 9px;
+}
+.select_producer > input{
+    width: 891px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    float: right;
+    margin-top: 15px;
+    padding-left: 6px;
+}
+.about_info{
+	line-height: 40px;
+	height: 200px;
+    position: relative;
+    margin-top: 56px !important;
+}
+.about_info > textarea{
+	position: absolute;
+	width: 891px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    height: 200px;
+    margin-top: 15px;
+    padding-left: 6px;
+    padding-top: 6px;
+    right: 0px;
+}
+.images{
+	height: 250px;
+}
+.images > label{
+	margin-left: 12px;
+	position: relative;
+    top: 30px;
+}
+.pic_box{
+	width: 287px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    left: 109px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-image: url(../img/add.png);
+    background-repeat: no-repeat;
+    background-size: 80% auto;
+    background-position: center center;
+    padding-top: 6px;
+    padding-left: 6px;
+}
+.img{
+	width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.pic_box span{
+	color: rgba(0, 0, 0, 0.5);
+}
+.img_hint{
+	position: absolute;
+	right: 10px;
+	bottom: 5px;
+}
+.img_hint > i{
+	color: #e6211b;
+	font-style: normal;
+}
+.pic_box > input{
+	width: 287px;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+/*推荐信息 form end*/
+
+/*推荐人信息 start*/
+.referral_person_box,
+.business_cooperation_box{
+	margin-top: 135px;
+}
+.person_name > label,
+.person_phone > label{
+	margin-left: 12px;
+}
+/*推荐人信息 end*/
+
+.submit_btn{
+	width: 225px;
+    height: 50px;
+    font-size: 1.6em;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 100px;
+}
+
+/*商务合作 start*/
+.business_cooperation_box > h2{
+	margin-bottom: 40px;
+}
+.business_cooperation_box > p{
+	text-align: center;
+	margin-top: 20px;
+}
+/*商务合作 end*/
+
+/*main end*/
+
+footer{
+	background-color: rgba(0, 0, 0, 1);
+    color: rgba(103,103,103, 1);
+    padding-top: 50px;
+    margin-top: 45px;
+    padding-bottom: 15px;
+
+}
+footer > h4{
+	text-align: center;
+    color: rgba(245, 245, 245, 1);
+    font-weight: 400;
+    font-size: 1.2em;
+}
+footer > ul{
+	padding: 30px 0px;
+    width: 981px;
+    margin: 0 auto;
+}
+footer > ul > li{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+	display: inline-block;
+	width:19%;
+	text-align: center;
+}
+footer > ul > li > a{
+	color: rgba(103,103,103, 1);
+}
+.rss{
+	margin: 0 auto;
+	display: table;s
+}
+.rss > div{
+    padding: 35px 0px;
+    float: left;
+    margin: 0px 30px;
+}
+footer > p{
+    padding: 23px 0px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(103, 103, 103, 1);
+    width: 447px;
+}
+.weChat{
+	position: relative;
+}
+.weChat > span,
+.microblog > span{
+	display: inline-block;
+    background-color: rgba(200, 200, 200, 1);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+}
+.icon-weChat,
+.icon-microblog{
+	color: rgba(70, 70, 70, 1);
+}
+.weChat img{
+	-webkit-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-ms-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+
+	opacity: 0;
+	position: absolute;
+	bottom: 50px;
+    right: 145px;
+    z-index: -1;
+}
+.weChat:hover img{
+	opacity: 1;
+	overflow: auto;
+    z-index: 1;
+}
+.copyright{
+	width: 100%;
+    text-align: center;
+    border-bottom: 0px;
+    font-weight: 300;
+}

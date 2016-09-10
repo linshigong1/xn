@@ -1,6 +1,7 @@
-#Fri Sep 09 13:38:10 CST 2016
+#Sat Sep 10 11:31:30 CST 2016
 eclipse.preferences.version=1
 encoding//src/main/resources/system-config.properties=UTF-8
-encoding//src/main/webapp/WEB-INF/classes/system-config.properties=UTF-8
+encoding//src/main/webapp/WEB-INF/view/pc/index.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/view/pc/recommendInfo.jsp=UTF-8
 encoding//src/main/webapp/index.jsp=UTF-8
 encoding/<project>=UTF-8
